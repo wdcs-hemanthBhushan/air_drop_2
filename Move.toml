@@ -1,0 +1,18 @@
+[package]
+name = "test_coin"
+version = "1.0.0"
+authors = []
+
+
+[addresses]
+my_addrx = "0xa0158401057eb135d0272cc45345e19ee39de7416898feaffdcffc35c774bda0"
+#std="0x1"
+aptos_framework="0x1"
+#aptos_std="0x1"
+aptos_token="0x3"
+admin = "0xa0158401057eb135d0272cc45345e19ee39de7416898feaffdcffc35c774bda0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework/", rev="main" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-stdlib/", rev="main" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token/", rev="main" }
